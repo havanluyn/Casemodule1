@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kho Product</title>
+    <link rel="stylesheet" href="/fontawesome-free-6.1.2-web/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="khoproduct.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navpar">
+                    <ul class="header__navpar-list">
+                        <li class="header__navpar-item">
+                            <span class="header__navpar-item-link">Xin chào, Admin</span>
+                        </li>
+                        <li class="header__navpar-item">
+                            <span class="header__navpar-item-link" onclick="dangxuat()">Đăng xuất</span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="formsearch">
+                <img class="logoimg" src="logo.png" alt="">
+                <div class="formsearch-input">
+                    <input oninput='timkiem()' type="sreach" id="timkiem" placeholder="Tìm kiếm">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="row">
+        <div class="tableform">
+            <div class="tableform-heading">
+                <div class="tableform-heading-items">
+                    <div class="tableform-item"><span> Tên sản phẩm </span>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="tableform-item"><span> Giá </span>
+                        <input type="number" id="price">
+                    </div>
+                    <div class="tableform-item"><span> Size min </span>
+                        <input type="number" id="size">
+                    </div>
+                    <div class="tableform-item"><span> Ảnh sản phẩm </span>
+                        <input type="text" id="picture">
+                    </div>
+                    <div class="tableform-item"><span> Số lượng </span>
+                        <input type="number" id="amount">
+                    </div>
+                    <button onclick="add()" class="btn-add">ADD</button>
+                    <button onclick="save()" class="btn-save none">SAVE</button>
+                    <input type="hidden" id="hidden">
+                </div>
+            </div>
+            <div class="table">
+                <table>
+                    <thead>
+                        <th>STT</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Giá <i class="fa-solid fa-sort-up" onclick="sortup()"></i> <i class="fa-solid fa-sort-down"
+                                onclick="sortdown()"></i></th>
+                        <th>Size min</th>
+                        <th>Ảnh sản phẩm</th>
+                        <th>Số lượng</th>
+                        <th>Action</th>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="khoproduct.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopnike</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.1.2-web/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="cardproduct.css">
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header__navpar">
+                    <ul class="header__navpar-list">
+                        <li class="header__navpar-item">0382.208.020</li>
+                        <li class="header__navpar-item">Kết nối
+                            <a href="https://www.facebook.com/" class="header__navpar-iconlink">
+                                <i class="fa-brands fa-facebook"></i></a>
+                            <a href="" class="header__navpar-iconlink">
+                                <i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="header__navpar-list">
+                        <li class="header__navpar-item1">
+                            <a href="" class="header__navpar-item-link">Thông báo</a>
+                            <!-- <div class="notify">
+                                <header class="header__notify">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__notify__list">
+                                    <li class="header__notify__item">
+                                        <a href="" class="header__notify__link">
+                                            <img src="/baitaphtml/images.jfif" alt="" class="header__notify__img">
+                                            <div>
+                                                <span class="header__notify__name">Mỹ phẩm hàng hiệu</span>
+                                                <span class="header__notify__dec">Mua tại đây</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="header__notify__list">
+                                    <li class="header__notify__item">
+                                        <a href="" class="header__notify__link">
+                                            <img src="/baitaphtml/images.jfif" alt="" class="header__notify__img">
+                                            <div>
+                                                <span class="header__notify__name">Mỹ phẩm hàng hiệu</span>
+                                                <span class="header__notify__dec">Mua tại đây</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="header__notify__list">
+                                    <li class="header__notify__item">
+                                        <a href="" class="header__notify__link">
+                                            <img src="/baitaphtml/images.jfif" alt="" class="header__notify__img">
+                                            <div>
+                                                <span class="header__notify__name">Mỹ phẩm hàng hiệu</span>
+                                                <span class="header__notify__dec">Mua tại đây</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </li>
+                        <li class="header__navpar-item">
+                            <a href="" class="header__navpar-item-link">Trợ giúp</a>
+                        </li>
+                        <li class="header__navpar-item">
+                            <span class="header__navpar-item-link" onclick="formdangki()">Đăng kí</span>
+                        </li>
+                        <li class="header__navpar-item">
+                            <span class="header__navpar-item-link" onclick="formdangnhap()">Đăng nhập</span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="formsearch">
+                <img class="logoimg" src="logo.png" alt="">
+                <div class="formsearch-input">
+                    <input type="sreach" id="timkiem" oninput="timkiem()" placeholder="Hãy nhập thứ bạn muốn!!!">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+
+        </div>
+        <footer class="footer">
+
+        </footer>
+    </div>
+    <div class="modal modal-none">
+        <div class="modal_overlay"></div>
+        <div class="modal_body">
+            <div class="modal_inner">
+                <div class="auth-form">
+                    <div class="auth-form_header">
+                        <h3 class="auth-form_heading">Đăng kí</h3>
+                        <span class="auth-form_btn" onclick="formdangnhap()">Đăng nhập</span>
+                    </div>
+                    <div class="auth-form_form">
+                        <div class="auth-form_group">
+                            <input id="emaildangki" type="email" class="auth-form_input" placeholder="Nhập Email">
+                            <br>
+                            <span id="emailsignin"></span>
+                        </div>
+                        <div class="auth-form_group">
+                            <input id="password" type="password" class="auth-form_input" placeholder="Nhập mật khẩu">
+                            <br>
+                            <span id="pass"></span>
+                        </div>
+                        <div class="auth-form_group">
+                            <input id="returnpass" type="password" class="auth-form_input"
+                                placeholder="Nhập lại mật khẩu">
+                            <br>
+                            <span id="passreturn"></span>
+                        </div>
+                    </div>
+                    <div class="auth-form_primary">
+                        <button class="btn btn-primary-back" onclick="offformdangki()">Trở lại</button>
+                        <button class="btn btn-primary" onclick="dangki()">Đăng kí</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modaldangnhap modal-none">
+        <div class="modal_overlay"></div>
+        <div class="modal_body">
+            <div class="modal_inner">
+                <div class="auth-form">
+                    <div class="auth-form_header">
+                        <h3 class="auth-form_heading">Đăng nhập</h3>
+                        <span class="auth-form_btn" onclick="formdangki()"> Đăng kí</span>
+                    </div>
+                    <div class="auth-form_form">
+                        <div class="auth-form_group">
+                            <input id="emaildangnhap" type="email" class="auth-form_input" placeholder="Nhập Email">
+                            <br>
+                            <span id="email"></span>
+                        </div>
+                        <div class="auth-form_group">
+                            <input id="passworddangnhap" type="password" class="auth-form_input"
+                                placeholder="Nhập mật khẩu">
+                            <br>
+                            <span id="passwordsignin"></span>
+                        </div>
+                    </div>
+                    <div class="auth-form_primary">
+                        <button class="btn btn-primary-back" onclick="offformdangnhap()">Trở lại</button>
+                        <button class="btn btn-primary" onclick="dangnhap()">Đăng nhập</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product">
+        <div class="product-heading">
+            <div class="product-heading-list">
+                <div class="product-heading-items">
+                    <div class="product-heading-item" onclick="renderall()">Tất cả sản phẩm</div>
+                    <div class="product-heading-item" onclick="renderbestsell()">Bán chạy nhất</div>
+                    <div class="product-heading-item" onclick="renderall()">Giảm giá</div>
+                </div>
+            </div>
+        </div>
+        <div class="product-body"></div>
+    </div>
+    <div class="yourcard">
+        <div class="yourcard-heading">
+            <h2>Giỏ hàng của bạn</h2>
+        </div>
+        <div class="youcard-body">
+            <div class="yourcard-items">
+                <div class="yourcard-render">
+                </div>
+                <div class="yourcard-total">
+                    <span>Total</span>
+                    <span id="total"></span>
+                </div>
+            </div>
+        </div>
+        <div class="youcard-footer">
+            <button> BUY NOW </button>
+        </div>
+    </div>
+</body>
+<script src="formdangkidangnhap.js"></script>
+<script src="formproduct.js"></script>
+
+</html>

@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    height: 120px;
+    background-image: linear-gradient(0, #fe6433, #f53e2d);
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+}
+
+.formsearch {
+    position: absolute;
+    left: 200px;
+    top: 0px;
+    height: 50px;
+    width: 800px;
+}
+
+.logoimg {
+    position: relative;
+    width: 150px;
+    color: #fe6433;
+    bottom: 5px;
+
+}
+
+.formsearch-input {
+    width: 70%;
+    height: 40px;
+    position: relative;
+    top: -95px;
+    right: -170px;
+    display: flex;
+}
+
+.formsearch-input>input {
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    width: 80%;
+    height: 100%;
+    font-size: 20px;
+}
+
+.formsearch-input>i {
+    font-size: 30px;
+    width: 10%;
+    height: 40px;
+    color: #fff;
+    margin: 5px 9px;
+}
+
+.formsearch-input>i:hover {
+    transform: scale(0.9);
+}
+
+.tableform {
+    position: absolute;
+    height:700px;
+    width: 1000px;
+    left: 120px;
+    top: 120px;
+    right: 120px;
+    background-color: bisque;
+}
+
+.table {
+    position: relative;
+    height: 100;
+    width: 90%;
+    left: 5px;
+    top: 75px;
+}
+
+table {
+    position: relative;
+    width: 100%;
+    left: 45px;
+}
+
+table,
+th,
+tr,
+td {
+    border-collapse: collapse;
+    border: 1px solid #fe6433;
+    text-align: center;
+}
+
+.tableform-heading {
+    width: 1000px;
+    height: 50px;
+    background-color: #f7f7f7;
+    position: fixed;
+    z-index: 2;
+    /* display: flex; */
+}
+
+.tableform-heading-items {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.tableform-item {
+    width: 200px;
+    height: 15px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.tableform-item>input {
+    width: auto;
+    flex-grow: 1;
+    position: relative;
+
+}
+
+.btn-add {
+    min-width: 60px;
+    height: 36px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: #fe6433;
+    color: #fff;
+}
+
+.btn-add:hover {
+    transform: scale(0.95);
+    box-shadow: 0.5px 0.5px #5a1601;
+}
+
+.btn-save {
+    min-width: 60px;
+    height: 36px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: #fe6433;
+    color: #fff;
+    position: relative;
+    right: 0px;
+}
+
+.btn-save:hover {
+    transform: scale(0.95);
+    box-shadow: 0.5px 0.5px #5a1601;
+}
+
+.fa-sort-up {
+    font-size: 20px;
+    position: relative;
+    left: 6px;
+    bottom: -6px
+}
+
+.fa-sort-down {
+    font-size: 20px;
+    position: relative;
+    left: 5px;
+    bottom: 6px;
+}
+
+.fa-sort-down:hover,
+.fa-sort-up:hover {
+    color: #fff;
+}
+
+.none {
+    display: none;
+}
+
+.header__navpar-list {
+    display: flex;
+    /* trục chiều ngang */
+    justify-content: space-between;
+    /* các item nằm về 2 phía */
+    margin: 5px 25px 0px 25px
+}
+
+.header__navpar-item,
+.header__navpar-item-link {
+    display: inline-block;
+    /* nằm trên 1 hàng nhưng vẫn giữ nguyên dạng block  */
+    font-size: 14px;
+    color: #fff;
+    font-weight: 200;
+}
+
+.header__navpar-item:hover,
+.header__navpar-item-link:hover {
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+.edit,.remove{
+    border: none;
+    outline: none;
+    color: rgb(7, 7, 129);
+}
+.edit:hover,.remove:hover{
+    color: rgb(178, 178, 234);
+}
