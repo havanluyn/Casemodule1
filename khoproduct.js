@@ -145,6 +145,6 @@ function sortdown() {
 function dangxuat() {
     let confirmAnswer = confirm("Bạn chắc chắn muốn thoát?");
     if (confirmAnswer) {
-        window.location.replace("trangwebdautien.html");
+        window.location.replace("index.html");
     }
 }
