@@ -93,6 +93,22 @@ function save() {
     let size = document.querySelector(`#size`).value;
     let image = document.querySelector(`#picture`).value;
     let amount = document.querySelector(`#amount`).value;
+    if (name.trim() == "" || name.trim() == null) {
+        alert('Bạn chưa nhập tên sản phẩm');
+        return;
+    }
+    if (price.trim() == "" || price.trim() == null || price.trim() < 1 || price.trim() > 100000) {
+        alert('Bạn chưa nhập giá hoặc giá chưa phù hợp');
+        return;
+    }
+    if (picture.trim() == "" || picture.trim() == null) {
+        alert('Hãy thêm ảnh cho sản phẩm');
+        return;
+    }
+    if (amount.trim() == "" || amount.trim() == null || amount.trim() < 1) {
+        alert('Hãy thêm số lượng sản phẩm');
+        return;
+    }
     product = new Product(name, price, size, image, amount);
     products[id] = product;
     localStorage.setItem(pdt, JSON.stringify(products));

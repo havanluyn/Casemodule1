@@ -431,7 +431,7 @@
     background-color: rgb(76, 240, 76);
     border-radius: 10px;
     color: #fff;
-    box-shadow:0.5px 0.5px #fff;
+    box-shadow:0.5px 0.5px rgb(74, 49, 49);
     font-size: 25px;
     top: 10px;
 }
