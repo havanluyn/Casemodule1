@@ -101,7 +101,7 @@ function save() {
         alert('Bạn chưa nhập giá hoặc giá chưa phù hợp');
         return;
     }
-    if (picture.trim() == "" || picture.trim() == null) {
+    if (image.trim() == "" || image.trim() == null) {
         alert('Hãy thêm ảnh cho sản phẩm');
         return;
     }
